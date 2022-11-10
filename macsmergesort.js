@@ -1,3 +1,7 @@
+// merge sort algorithm built for mission ready challenge 10/11/22
+//tests with randomly generated array
+
+
 // create new array of random length up to 100 of random numbers up to 100
 const numbers = new Array(Math.floor(Math.random()*100));
 for(let i = 0; i < numbers.length; i ++){
@@ -5,7 +9,7 @@ for(let i = 0; i < numbers.length; i ++){
 }
 
 function mergeSort(ar){
-//once array has been recursively split down to arrays of length 1 return value 
+//once array has been recursively split down to arrays of length 1, returns the array
 if(ar.length<=1) {
     return ar;
 }
